@@ -1,3 +1,9 @@
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,7 +19,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -23,18 +28,68 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-* {
-    padding: 0;
-    margin: 0;
+
+*{
     box-sizing: border-box;
-    max-width: 100%;
-    border: 1pc solid darkslategray;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid darkgrey; 
 }
 html {
-    font-size:62.5%;
+    font-size: 62.5%;
 }
 body {
-	font-size: 1.6rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     color: #4f4f4f;
+    background-color: turquoise;
+}
+header {
+   
+}
+nav {
+    display: flex;
+    align-content: flex-end;
+    margin-left: 5%;
+}
+nav a {
+    width: 15%;
+    text-align: center;
+}
+nav a:hover {
+    background-color: forestgreen;
+    color: white;
+    transition: 2s;
+}
+section, footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.profile {
+    width: 90%;
+    border-radius: 30%;
+    border: 2.5px inset forestgreen;
+}
+.main {
+    display: flex;
+    width: 50%;
+}
+.info {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 2%;
+}
+.info h2, button, p {
+    padding: 2%;
+}
+
+.info:hover {
+    background-color: forestgreen;
+    color: white;
+    transition: 2s;
 }

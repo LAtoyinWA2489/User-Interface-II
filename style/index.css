@@ -51,7 +51,7 @@ header {
 h1 {
     padding: 3%;
     position: relative;
-    font-size: 3rem;
+    font-size: 3.6rem;
 }
 nav {
     display: flex;
@@ -61,12 +61,14 @@ nav {
 nav a {
     display: flex;
     width: 15%;
-    text-align: center;
+    margin: 2%;
+    justify-content: space-around;
+    border-radius: 30%;
 }
 nav a:hover {
     background-color: forestgreen;
     color: white;
-    transition: 2s;
+    border: 3px dotted white;
 }
 section {
     width: 100%;
@@ -117,11 +119,13 @@ footer {
     width: 100%;
     padding: 3%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
 }
 .gallery img {
+    z-index: 2;
     width: 23%;
+    margin-top: 4%;
     border: 3px double forestgreen;
 }
 .gallery img:hover {

@@ -42,18 +42,24 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.5;
-    color: #4f4f4f;
+    color:darkolivegreen;
     background-color: turquoise;
 }
 header {
-   
+   margin: 5%;
+}
+h1 {
+    padding: 3%;
+    position: relative;
+    font-size: 3rem;
 }
 nav {
     display: flex;
     align-content: flex-end;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 nav a {
+    display: flex;
     width: 15%;
     text-align: center;
 }
@@ -62,11 +68,16 @@ nav a:hover {
     color: white;
     transition: 2s;
 }
-section, footer {
+section {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+footer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }
 .profile {
     width: 90%;
@@ -75,7 +86,7 @@ section, footer {
 }
 .main {
     display: flex;
-    width: 50%;
+    width: 53%;
 }
 .info {
     width: 47%;
@@ -86,10 +97,30 @@ section, footer {
 }
 .info h2, button, p {
     padding: 2%;
+    margin: 2% 0;
 }
 
 .info:hover {
     background-color: forestgreen;
     color: white;
     transition: 2s;
+}
+.info button:hover {
+    background-color: skyblue;
+    color: white;
+    transition: 2s;
+}
+.gallery {
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.gallery img {
+    width: 23%;
+    border: 3px double forestgreen;
+}
+.gallery img:hover {
+    border: 3px dotted white;
 }

@@ -84,6 +84,9 @@ footer {
     border-radius: 30%;
     border: 2.5px inset forestgreen;
 }
+.profile:hover {
+    border: 3px dotted white;
+}
 .main {
     display: flex;
     width: 53%;

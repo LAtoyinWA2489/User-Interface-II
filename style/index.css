@@ -154,7 +154,24 @@ button:hover {
 }
 
 @media(max-width: 800px){
-
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        justify-content: center;
+    }
+    
+    }
+    .profile {
+        width: 75%;
+    }
+    .main {
+        width: 50%;
+    }
+    .info {
+        width: 50%;
+    }
 }
 
 @media(max-width: 500px){

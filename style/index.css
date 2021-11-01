@@ -121,7 +121,7 @@ button {
 button:hover {
     background-color:rgba(5, 224, 202, 0.678);
     color: white;
-    transition: 2s;
+    transition: 1s;
 }
 .gallery {
     width: 100%;
@@ -161,8 +161,6 @@ button:hover {
     nav {
         justify-content: center;
     }
-    
-    }
     .profile {
         width: 75%;
     }
@@ -175,5 +173,41 @@ button:hover {
 }
 
 @media(max-width: 500px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .main {
+        width: 100%;
+    }
+    .profile {
+        width: 55;%
+    }
+    .info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .info h2 {
+        font-size: 3rem;
+    }
+    .info button {
+        padding: 3% 6%; 
+    }
+    .info p {
+        text-align: center;
+        margin: 0 5%;
+    }
+    .gallery {
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .gallery img {
+        width: 40%;
 
-}
+    }

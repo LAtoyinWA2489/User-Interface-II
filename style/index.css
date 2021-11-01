@@ -131,3 +131,11 @@ footer {
 .gallery img:hover {
     border: 3px dotted white;
 }
+
+
+ @media screen(max-width: 500px){
+body {
+    .gallery img:hover {
+        border: 3px dotted white;
+    }
+} 

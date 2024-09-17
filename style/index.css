@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 *{
     box-sizing: border-box;
     padding:0;
-    margin:0;
+    margin:5%;
     max-width:100%;
     border:1px solid darkgrey; 
 }
@@ -42,8 +42,8 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.5;
-    color:darkolivegreen;
-    background-color: turquoise;
+    color:green;
+    background-color: rgba(5, 224, 202, 0.678);
 }
 header {
    margin: 5%;
@@ -64,6 +64,7 @@ nav a {
     margin: 2%;
     justify-content: space-around;
     border-radius: 30%;
+    color:green;
 }
 nav a:hover {
     background-color: forestgreen;
@@ -81,17 +82,23 @@ footer {
     display: inline-block;
     text-align: center;
 }
+
+button {
+    padding: 2%;
+    margin: 2% 0;
+}
 .profile {
-    width: 90%;
+    width: 60%;
     border-radius: 30%;
     border: 2.5px inset forestgreen;
+    margin-left: 15%;
 }
 .profile:hover {
     border: 3px dotted white;
 }
 .main {
     display: flex;
-    width: 53%;
+    width: 40%;
 }
 .info {
     width: 47%;
@@ -99,8 +106,9 @@ footer {
     flex-direction: column;
     align-items: baseline;
     padding: 2%;
+    line-height: 2;
 }
-.info h2, button, p {
+.info h2, p {
     padding: 2%;
     margin: 2% 0;
 }
@@ -110,10 +118,10 @@ footer {
     color: white;
     transition: 2s;
 }
-.info button:hover {
-    background-color: skyblue;
+button:hover {
+    background-color:rgba(5, 224, 202, 0.678);
     color: white;
-    transition: 2s;
+    transition: 1s;
 }
 .gallery {
     width: 100%;
@@ -131,3 +139,75 @@ footer {
 .gallery img:hover {
     border: 3px dotted white;
 }
+
+.links {
+    width: 50%;
+    padding: 2%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    padding: 0 2%;
+    color:green;
+}
+
+@media(max-width: 800px){
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        justify-content: center;
+    }
+    .profile {
+        width: 75%;
+    }
+    .main {
+        width: 50%;
+    }
+    .info {
+        width: 50%;
+    }
+}
+
+@media(max-width: 500px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .main {
+        width: 100%;
+    }
+    .profile {
+        width: 55;%
+    }
+    .info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .info h2 {
+        font-size: 3rem;
+    }
+    .info button {
+        padding: 3% 6%; 
+    }
+    .info p {
+        text-align: center;
+        margin: 0 5%;
+    }
+    .gallery {
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .gallery img {
+        width: 40%;
+
+    }
